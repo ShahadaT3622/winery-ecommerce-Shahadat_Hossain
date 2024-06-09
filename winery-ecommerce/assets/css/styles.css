@@ -1,0 +1,554 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Adjust header styling to align items */
+header {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem; /* Reduce padding for smaller header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 99%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start; /* Align to the left */
+    padding-left: 20px; /* Add some padding if needed */
+}
+
+.logo img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+}
+
+
+/* Navigation styling */
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 0.5rem; /* Reduced margin for closer alignment */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust for fixed header */
+body {
+    margin-top: 70px;
+}
+
+
+/* Hero section styling */
+.hero {
+    background: #dce5ca;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f2f2;
+    margin-top: 70px; /* Adjust for fixed header */
+}
+
+.hero .hero-content {
+    background-color: rgba(248, 244, 244, 0.5); /* Add background color with transparency for better readability */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.hero a {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background: #e67e22;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px; /* Adjust for fixed header */
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Featured products styling */
+.featured-products .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background: #ced8c8;
+    margin: 1rem;
+    flex: 1 0 21%; /* Adjust for responsive layout */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Checkout page styling */
+.checkout-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.checkout-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.order-summary {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background: #e67e22;
+}
+/* Blog section styling */
+.blog-section {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 0 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.blog-post a:hover {
+    background: #e67e22;
+}
+/* Contact page styling */
+.contact {
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 80px; /* Adjust for fixed header */
+    text-align: center;
+}
+
+.contact h1 {
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact .form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact .btn {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background: #e67e22;
+}
+/* Styles for register form */
+.register-container {
+    width: 50%;
+    margin: 5rem auto; /* Adjust the margin for better visibility */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Adjust for fixed header */
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.register-container input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.register-container button {
+    padding: 0.75rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register-container button:hover {
+    background-color: #e67e22;
+}
+
+/* Styles for Site Map page */
+.sitemap-container {
+    width: 50%;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sitemap-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sitemap-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sitemap-container ul li {
+    margin-bottom: 1rem;
+}
+
+.sitemap-container ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitemap-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.sitemap-container ul ul {
+    padding-left: 1rem;
+}
+/* Add these styles to your existing CSS file */
+
+/* Styles for login form */
+.login-container {
+    width: 50%;
+    margin: 5rem auto; /* Adjust the margin for better visibility */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.login-container input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.login-container button {
+    padding: 0.75rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #e67e22;
+}
+
+/* Dashboard container styling */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem; /* Adjust for fixed header */
+}
+
+/* Grid layout for dashboard items */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Individual dashboard item styling */
+.dashboard-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
